@@ -1,4 +1,4 @@
-var STATUS_URL = "http://35.184.211.77/";
+var STATUS_URL = "http://localhost:3000/status";
 
 window.onload = initialRequest();
 var container;
@@ -12,7 +12,6 @@ function initialRequest() {
 }
 
 function die() {
-  console.log("DIE");
   var xhttp = new XMLHttpRequest();
   xhttp.open("GET", STATUS_URL + "die", true);
   xhttp.send();
