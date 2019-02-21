@@ -6,7 +6,7 @@ var container;
 function initialRequest() {
   container = document.getElementById("container");
   container.innerHTML = "";
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 50; i++) {
     getSignleContent(STATUS_URL, renderSquare);
   }
 }
